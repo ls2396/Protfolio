@@ -1062,6 +1062,34 @@ body.nav-active .nav_list-item{
 /* Page_Z-Brain */
 /* #page
 ================================================== */
+.itembgColor{
+	background-color: var(--mainColor);
+}
+.itembgColor .header{
+	width: 98%;
+	z-index: 9999;
+	margin: 0 auto;
+	border-bottom: 1px solid var(--subColor);
+	position: fixed;
+	top: 0;
+}
+.itembgColor .logo-wrap{
+	cursor: pointer;
+}
+.itembgColor .logo-wrap a,
+.itembgColor h1,
+.itembgColor .pro_tit_projects-text_page{
+	color: var(--subColor);
+}
+.itembgColor .nav-but-wrap{
+	border-left: 1px solid var(--subColor);
+}
+.itembgColor .menu-icon_line{
+	background-color: var(--subColor);
+}
+.itembgColor .pro_tit_projects-text_page{
+	border-bottom: 1px solid var(--subColor);
+}
 .page{
 	width: calc(100% - 102px);
 	margin: 0 auto;
@@ -1072,7 +1100,7 @@ body.nav-active .nav_list-item{
 .page h3{
 	font-family: 'Urbanist';
 	font-weight: 800;
-	color: var(--mainColor);
+	color: var(--subColor);
 	font-size: 1.2vw;
 	margin: 40px 0 6vw;
 }
@@ -1080,12 +1108,14 @@ body.nav-active .nav_list-item{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	border-bottom: 1px solid var(--mainColor);
+	border-bottom: 1px solid var(--subColor);
 }
 .page_img img{
-	width: 64%;
+	width: 72%;
 	height: auto;
-	margin-bottom: 40px;
+}
+.page_img img:last-child{
+	margin-bottom: 80px;
 }
 
 /* #nextproject

@@ -12,6 +12,7 @@
 :root{
     --mainColor:rgb(18, 18, 18);
     --subColor:#E3DFDC;
+    /* --subopaColor:#e3dfdc40; */
     --transTextColor:#C5D174;
     --hintTextColor:#fff;
     --decorateColor:#F05D22;
