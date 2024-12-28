@@ -1,89 +1,83 @@
 $(function () {
-    $(window).scroll(function () {
-        if ($(this).scrollTop() >= 0&& $(this).scrollTop() <= 1160) {
-           $(".scroll").css("background", "#E3DFDC").css("transition", "0.4s");
+    function getResponsiveConfig() {
+        if (window.matchMedia("(min-width: 1548px)").matches) {
+            return { scrollTriggers: [1160, 2200, 2500], scaleTrigger: 1400, title1Trigger: 420, title2Trigger: 1920 };
+        } else if (window.matchMedia("(max-width: 1548px) and (min-width: 1188px)").matches) {
+            return { scrollTriggers: [900, 1600, 2000], scaleTrigger: 880, title1Trigger: 240, title2Trigger: 1500 };
+        } else if (window.matchMedia("(max-width: 1188px) and (min-width: 744px)").matches) {
+            return { scrollTriggers: [600, 1000, 1400], scaleTrigger: 600, title1Trigger: 240, title2Trigger: 900 };
+        } else if (window.matchMedia("(max-width: 744px)").matches) {
+            return { scrollTriggers: [500, 800, 1000], scaleTrigger: 600, title1Trigger: 200, title2Trigger: 800 };
         }
-       else if ($(this).scrollTop() >= 1160 && $(this).scrollTop() <= 2080) {
-          $(".scroll").css("background", "#F05D22").css("transition", "0.4s");
-       }
-       else if ($(this).scrollTop() >= 2080 && $(this).scrollTop() <= 3200) {
-          $(".scroll").css("background", "#E3DFDC").css("transition", "0.4s");
-       }
-   });
-});
+        return {};
+    }
 
+    function applyResponsiveBehavior() {
+        const config = getResponsiveConfig();
+        const reviewImage = document.querySelector(".review_right img");
 
-window.addEventListener("scroll", () => {
-   const scrollPosition = window.scrollY;
-   const reviewImage = document.querySelector(".review_right img");
+        $(window).scroll(function () {
+            const scrollTop = $(this).scrollTop();
 
-   const triggerDistance = 1260;
-   const maxScale = 1;
-   const minScale = 1;
+            // 背景颜色变化
+            if (scrollTop >= 0 && scrollTop <= config.scrollTriggers[0]) {
+                $(".scroll").css("background", "#E3DFDC").css("transition", "0.4s");
+            } else if (scrollTop > config.scrollTriggers[0] && scrollTop <= config.scrollTriggers[1]) {
+                $(".scroll").css("background", "#F05D22").css("transition", "0.4s");
+            } else if (scrollTop > config.scrollTriggers[1] && scrollTop <= config.scrollTriggers[2]) {
+                $(".scroll").css("background", "#E3DFDC").css("transition", "0.4s");
+            }
 
-   if (scrollPosition > triggerDistance) {
-       let newScale = Math.min((scrollPosition - triggerDistance) / 200 + minScale, maxScale);
-       reviewImage.style.transform = `scale(${newScale})`;
-       reviewImage.style.transition = "transform 0.6s ease-out"; 
-   }
-});
+            // 图片缩放逻辑
+            const maxScale = 1;
+            const minScale = 0.4; // 初始缩放比例
+            if (scrollTop >= config.scaleTrigger) {
+                const newScale = Math.min((scrollTop - config.scaleTrigger) / 200 + minScale, maxScale);
+                reviewImage.style.transform = `scale(${newScale})`;
+                reviewImage.style.transition = "transform 0.4s ease-out";
+            } else {
+                reviewImage.style.transform = `scale(${minScale})`; // 保持初始比例
+                reviewImage.style.transition = "transform 0.4s ease-out";
+            }
+        });
 
-document.addEventListener("DOMContentLoaded", () => {
-   const reviewImage = document.querySelector(".review_right img");
-   reviewImage.style.transform = "scale(0.4)";
-});
+        // 初始标题动画状态
+        const title1 = $('.work_wrapper-text-title');
+        const title2 = $('.impact_right-title');
+        let title1Animated = false;
+        let title2Animated = false;
 
-
-$(document).ready(function () {
-    var title1 = $('.work_wrapper-text-title');
-    var title2 = $('.impact_right-title');
-
-    var title1Animated = false;
-    var title2Animated = false;
-
-    $(window).scroll(function () {
-        var scrollTop = $(window).scrollTop();
-        if (scrollTop > 420) {
-            if (!title1Animated) {
-                title1.css({
-                    transform: 'translateY(0)',
-                    transition: 'transform 0.6s ease-out',
-                    opacity: 1
-                });
+        $(window).scroll(function () {
+            const scrollTop = $(this).scrollTop();
+            if (scrollTop > config.title1Trigger && !title1Animated) {
+                title1.css({ transform: 'translateY(0)', transition: 'transform 0.4s ease-out', opacity: 1 });
                 title1Animated = true;
+            } else if (scrollTop <= config.title1Trigger) {
+                title1.css({ transform: 'translateY(100%)', opacity: 0 });
+                title1Animated = false;
             }
-        } else {
-            if (!title1Animated) {
-                title1.css({
-                    transform: 'translateY(100%)',
-                    transition: 'transform 0.6s ease-out',
-                    opacity: 0
-                });
-            }
-        }
-        if (scrollTop > 1920) {
-            if (!title2Animated) {
-                title2.css({
-                    transform: 'translateY(0)',
-                    transition: 'transform 0.6s ease-out',
-                    opacity: 1
-                });
+
+            if (scrollTop > config.title2Trigger && !title2Animated) {
+                title2.css({ transform: 'translateY(0)', transition: 'transform 0.4s ease-out', opacity: 1 });
                 title2Animated = true;
+            } else if (scrollTop <= config.title2Trigger) {
+                title2.css({ transform: 'translateY(100%)', opacity: 0 });
+                title2Animated = false;
             }
-        } else {
-            if (!title2Animated) {
-                title2.css({
-                    transform: 'translateY(100%)',
-                    transition: 'transform 0.6s ease-out',
-                    opacity: 0
-                });
-            }
-        }
+        });
+    }
+
+    applyResponsiveBehavior();
+
+    $(window).on('resize', () => {
+        $(window).off('scroll');
+        applyResponsiveBehavior();
     });
 
-    $(window).on('load', function () {
-        title1Animated = false;
-        title2Animated = false;
+    document.addEventListener("DOMContentLoaded", () => {
+        const reviewImage = document.querySelector(".review_right img");
+        reviewImage.style.transform = "scale(0.4)";
+        reviewImage.style.transition = "transform 0.4s ease-out";
     });
 });
 

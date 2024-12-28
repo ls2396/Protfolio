@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
             event.preventDefault();
 
             tabs.forEach(t => {
-                t.style.opacity = 0.78;
+                t.style.opacity = 0.72;
                 t.classList.remove("active");
             });
 
