@@ -364,7 +364,7 @@
 
 	.scroll {
 		width: 100%;
-		height: 2080px;
+		height: 2480px;
 		position: absolute;
 		padding: 0;
 		margin: 0;
@@ -1026,7 +1026,6 @@
 	}
 
 	.career_content-left img {
-		width: 56%;
 		height: 32vw;
 		margin-top: 4vw;
 	}

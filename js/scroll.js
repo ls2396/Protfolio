@@ -1,13 +1,13 @@
 $(function () {
     function getResponsiveConfig() {
         if (window.matchMedia("(min-width: 1548px)").matches) {
-            return { scrollTriggers: [1160, 2200, 2500], scaleTrigger: 1400, title1Trigger: 420, title2Trigger: 1920 };
+            return { scrollTriggers: [1160, 2280, 2400], scaleTrigger: 1400, title1Trigger: 420, title2Trigger: 2080 };
         } else if (window.matchMedia("(max-width: 1548px) and (min-width: 1188px)").matches) {
             return { scrollTriggers: [900, 1600, 2000], scaleTrigger: 880, title1Trigger: 240, title2Trigger: 1500 };
         } else if (window.matchMedia("(max-width: 1188px) and (min-width: 744px)").matches) {
-            return { scrollTriggers: [600, 1000, 1400], scaleTrigger: 600, title1Trigger: 240, title2Trigger: 900 };
+            return { scrollTriggers: [600, 1000, 1400], scaleTrigger: 600, title1Trigger: 240, title2Trigger: 920 };
         } else if (window.matchMedia("(max-width: 744px)").matches) {
-            return { scrollTriggers: [500, 800, 1000], scaleTrigger: 600, title1Trigger: 200, title2Trigger: 800 };
+            return { scrollTriggers: [520, 680, 800], scaleTrigger: 300, title1Trigger: 160, title2Trigger: 500 };
         }
         return {};
     }
