@@ -31,7 +31,7 @@
 		cursor: pointer;
 		font-family: 'Gabriella';
 		font-weight: 600;
-		font-size: 3vw;
+		font-size: 3.6vw;
 		letter-spacing: 2px;
 		color: var(--mainColor);
 	}
@@ -142,7 +142,7 @@
 		color: var(--mainColor);
 		overflow: hidden;
 		font-family: 'Gabriella';
-		font-size: 4.8vh;
+		font-size: 48px;
 		line-height: 1.6;
 		-webkit-transform: translate(100px, 0%);
 		transform: translate(100px, 0%);
@@ -217,7 +217,7 @@
 	}
 
 	.nav_text {
-		margin-top: 10vh;
+		margin-top: 7.2vh;
 	}
 
 	.nav_text-address,
@@ -400,17 +400,13 @@
 
 	.work_wrapper {
 		width: 100%;
-		display: flex;
-		justify-content: space-between;
 		padding-bottom: 40px;
 		border-bottom: 1px solid var(--mainColor);
 	}
 
 	.work_wrapper-text {
-		width: 24%;
 		display: flex;
 		flex-wrap: wrap;
-		border-right: 1px solid var(--mainColor);
 		padding-right: 24px;
 	}
 
@@ -427,7 +423,7 @@
 		color: var(--subColor);
 		background-color: var(--mainColor);
 		padding: 12px 24px;
-		margin: 0 0 1.8vh;
+		margin: 16px 0 1.8vh;
 		border-radius: 40px;
 		cursor: pointer;
 	}
@@ -438,7 +434,6 @@
 	}
 
 	.work_wrapper-img {
-		width: 64%;
 		height: 42vw;
 		position: relative;
 		overflow: hidden;
@@ -456,7 +451,7 @@
 	}
 
 	.color {
-		width: 26vw;
+		width: 32vw;
 		/* vw = (424 / 1920) * 100 ≈ 22.08vw */
 		height: 28vw;
 		display: inline-block;
@@ -464,9 +459,9 @@
 	}
 
 	.content_img {
-		width: 26vw;
-		height: 22.4vw;
-		max-width: 26vw;
+		width: 32vw;
+		height: 24vw;
+		max-width: 32vw;
 		overflow: hidden;
 		margin-bottom: 2.4vw;
 		position: relative;
@@ -477,8 +472,8 @@
 	.content_work3 a img,
 	.content_work4 a img,
 	.content_work5 a img {
-		width: 26vw;
-		height: 22.4vw;
+		width: 32vw;
+		height: 24vw;
 		cursor: pointer;
 		transition: transform 0.6s ease-out;
 	}
@@ -498,7 +493,7 @@
 	.content_work5_text {
 		display: flex;
 		flex-direction: column;
-		width: 26vw;
+		width: 32vw;
 		overflow: hidden;
 	}
 
@@ -543,7 +538,7 @@
 	}
 
 	.prev {
-		right: 8%;
+		right: 6%;
 	}
 
 	.next {
@@ -564,25 +559,14 @@
 ================================================== */
 	.review {
 		width: calc(100% - 102px);
-		display: flex;
-		justify-content: space-between;
 		z-index: 80;
 		border-bottom: 1px solid var(--mainColor);
 		margin-bottom: 24px;
 	}
 
-	.review_left {
-		width: 36%;
-		flex-direction: column;
-	}
-
 	.review_left-text {
 		display: flex;
 		margin-bottom: 4vw;
-	}
-
-	.review_left-text:nth-child(3) {
-		margin-bottom: 23vw;
 	}
 
 	.review_left-text>div {
@@ -596,9 +580,7 @@
 	}
 
 	.review_right {
-		width: 58%;
-		text-align: center;
-		margin: 2vw 0 40px;
+		margin: 4vh 0 40px;
 	}
 
 	.review_right img {
@@ -617,16 +599,14 @@
 	}
 
 	.impact_left {
-		width: 68%;
 		display: flex;
 		flex-wrap: wrap;
 		border-right: 1px solid var(--mainColor);
 	}
 
 	.impact_left-box {
-		width: 22.4vw;
-		height: 17.4vw;
-		display: inline-block;
+		width: 44vw;
+		height: 26.4vw;
 		margin-right: 16px;
 	}
 
@@ -635,17 +615,17 @@
 	}
 
 	.impact_left-img {
-		width: 22.4vw;
-		height: 11.6vw;
-		max-width: 24vw;
+		width: 44vw;
+		height: 20vw;
+		max-width: 44vw;
 		overflow: hidden;
 		margin-bottom: 1.2vw;
 		position: relative;
 	}
 
 	.impact_left a img {
-		width: 22.4vw;
-		height: 11.6vw;
+		width: 100%;
+		height: 20vw;
 		cursor: pointer;
 		transition: transform 0.6s ease-out;
 	}
@@ -655,17 +635,17 @@
 	}
 
 	.impact_left-caption {
-		font-size: 1vw;
+		font-size: 1.2vw;
 		font-family: 'Urbanist';
 		font-weight: 600;
 		display: flex;
-		width: 24vw;
 	}
 
 	.impact_right {
-		width: 28%;
+		width: 40%;
 		display: flex;
 		flex-direction: column;
+		margin-left: 4vw;
 	}
 
 	.impact_right-title {
@@ -840,7 +820,7 @@
 	}
 
 	.tabbed_content-img {
-		height: 12.4vw;
+		height: 16.4vw;
 		overflow: hidden;
 	}
 
@@ -862,7 +842,7 @@
 		font-weight: 800;
 		color: var(--mainColor);
 		margin: 2.8vw 0 12px;
-		text-align: left;
+		text-align: center;
 	}
 
 	.tabbed_content-item1,
@@ -1018,7 +998,6 @@
 
 	.career_content {
 		width: calc(100% - 102px);
-		display: flex;
 		margin: 8vw auto 0;
 	}
 
@@ -1035,15 +1014,13 @@
 	}
 
 	.career_content-right {
-		border-left: 1px solid var(--mainColor);
-		width: 56%;
 		transition: border-color 0.3s ease;
+		margin-top: 6.4vw;
 	}
 
 	.right_group1,
 	.right_group2,
 	.right_group3 {
-		margin-left: 4vw;
 		font-family: 'Urbanist';
 		font-weight: 800;
 		color: var(--mainColor);
@@ -1084,6 +1061,11 @@
 		margin-top: 4.8vw;
 	}
 
+	.right_group2 span,
+	.right_group3 span {
+		opacity: 0.72;
+		font-size: 1vw;
+	}
 	/* #internship
 ================================================== */
 	.int {
@@ -1171,14 +1153,6 @@
 		cursor: pointer;
 		line-height: 16px;
 	}
-
-	/* .file_download a::after{
-    content: "";
-    display: inline-block;
-    background: url("/img/download.gif") no-repeat center / contain;
-    width: 40px;
-    height: 40px;
-} */
 
 	.file_download a:hover {
 		opacity: 0.78;

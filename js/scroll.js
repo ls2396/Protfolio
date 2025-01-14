@@ -6,15 +6,17 @@ $(function () {
             return { scrollTriggers: [900, 1600, 2000], scaleTrigger: 880, title1Trigger: 240, title2Trigger: 1500 };
         } else if (window.matchMedia("(max-width: 1188px) and (min-width: 744px)").matches) {
             return { scrollTriggers: [600, 1000, 1400], scaleTrigger: 600, title1Trigger: 240, title2Trigger: 920 };
-        } else if (window.matchMedia("(max-width: 744px)").matches) {
-            return { scrollTriggers: [520, 680, 800], scaleTrigger: 300, title1Trigger: 160, title2Trigger: 500 };
         }
+        // 默认返回空对象，忽略 max-width: 744px 的配置
         return {};
     }
 
     function applyResponsiveBehavior() {
         const config = getResponsiveConfig();
         const reviewImage = document.querySelector(".review_right img");
+
+        // 如果配置为空，则直接跳过
+        if (!Object.keys(config).length) return;
 
         $(window).scroll(function () {
             const scrollTop = $(this).scrollTop();
@@ -80,6 +82,7 @@ $(function () {
         reviewImage.style.transition = "transform 0.4s ease-out";
     });
 });
+
 
 
 document.addEventListener("DOMContentLoaded", function () {

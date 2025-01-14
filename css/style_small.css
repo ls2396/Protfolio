@@ -31,7 +31,7 @@
 		cursor: pointer;
 		font-family: 'Gabriella';
 		font-weight: 600;
-		font-size: 2vw;
+		font-size: 2.4vw;
 		letter-spacing: 2px;
 		color: var(--mainColor);
 	}
@@ -142,7 +142,7 @@
 		color: var(--mainColor);
 		overflow: hidden;
 		font-family: 'Gabriella';
-		font-size: 5.2vh;
+		font-size: 6vw;
 		line-height: 1.15;
 		-webkit-transform: translate(100px, 0%);
 		transform: translate(100px, 0%);
