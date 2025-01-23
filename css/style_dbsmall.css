@@ -720,7 +720,7 @@
 		font-family: 'Gabriella';
 		font-weight: 600;
 		position: relative;
-		padding: 12.4vh 0 7.2vh;
+		padding: 12.4vh 0 8.8vh;
 		border-bottom: 1px solid var(--mainColor);
 	}
 
@@ -730,7 +730,7 @@
 		font-family: 'Gabriella';
 		font-weight: 600;
 		position: relative;
-		padding: 12.4vh 0 7.2vh;
+		padding: 12.4vh 0 8.8vh;
 		border-bottom: 1px solid var(--mainColor);
 	}
 
@@ -739,6 +739,7 @@
 		font-family: 'Gabriella';
 		font-weight: 600;
 		position: relative;
+		margin-top: 16px;
 	}
 
 	/* #tabbed
@@ -1227,6 +1228,23 @@
 
 	.itembgColor .pro_tit_projects-text_page {
 		border-bottom: 1px solid var(--subColor);
+	}
+
+	.pro_tit_projects-text_page,
+	.pro_tit_projects span{
+		display: block;
+	}
+
+	.pro_tit_projects a{
+		font-size: 1vw;
+		margin-top: 40px;
+		cursor: pointer;
+		border-bottom: 1px solid var(--hintTextColor);
+		font-family: 'Urbanist';
+	}
+
+	.pro_tit_projects a:hover{
+		opacity: 0.78;
 	}
 
 	.page {

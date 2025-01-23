@@ -741,7 +741,7 @@
 		font-family: 'Gabriella';
 		font-weight: 600;
 		position: relative;
-		padding: 14vh 0 18vh;
+		padding: 16vh 0 18vh;
 		border-bottom: 1px solid var(--mainColor);
 	}
 
@@ -751,7 +751,7 @@
 		font-family: 'Gabriella';
 		font-weight: 600;
 		position: relative;
-		padding: 14vh 0 12vh;
+		padding: 16vh 0 16vh;
 		border-bottom: 1px solid var(--mainColor);
 	}
 
@@ -760,6 +760,7 @@
 		font-family: 'Gabriella';
 		font-weight: 600;
 		position: relative;
+		margin-top: 16px;
 	}
 
 	/* #tabbed
@@ -1213,7 +1214,7 @@
 		margin: 40px 0 6vw;
 	}
 
-	/* Page_Z-Brain */
+	/* Page_Project */
 	/* #page
 ================================================== */
 	.itembgColor {
@@ -1251,6 +1252,23 @@
 		border-bottom: 1px solid var(--subColor);
 	}
 
+	.pro_tit_projects-text_page,
+	.pro_tit_projects span{
+		display: block;
+	}
+
+	.pro_tit_projects a{
+		font-size: 1vw;
+		margin-top: 40px;
+		cursor: pointer;
+		border-bottom: 1px solid var(--hintTextColor);
+		font-family: 'Urbanist';
+	}
+
+	.pro_tit_projects a:hover{
+		opacity: 0.78;
+	}
+
 	.page {
 		width: calc(100% - 102px);
 		margin: 0 auto;
@@ -1263,7 +1281,7 @@
 		font-family: 'Urbanist';
 		font-weight: 800;
 		color: var(--subColor);
-		font-size: 1.2vw;
+		font-size: 1vw;
 		margin: 40px 0 6vw;
 	}
 
