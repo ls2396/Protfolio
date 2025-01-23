@@ -1039,6 +1039,11 @@
 		transition: border-color 0.3s ease;
 	}
 
+	.career_content-right span {
+		font-size: 1vw;
+		opacity: 0.72;
+	}
+
 	.right_group1,
 	.right_group2,
 	.right_group3 {
