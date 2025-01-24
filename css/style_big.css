@@ -143,8 +143,8 @@
 		color: var(--mainColor);
 		overflow: hidden;
 		font-family: 'Gabriella';
-		font-size: 112px;
-		line-height: 1.15;
+		font-size: 102px;
+		line-height: 1;
 		-webkit-transform: translate(100px, 0%);
 		transform: translate(100px, 0%);
 		-webkit-transition: opacity .2s ease, -webkit-transform .3s ease;
