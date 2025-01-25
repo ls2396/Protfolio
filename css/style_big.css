@@ -839,7 +839,7 @@
 	}
 
 	.tabbed_content-img {
-		height: 12.4vw;
+		height: 14.2vw;
 		overflow: hidden;
 	}
 
@@ -1038,7 +1038,7 @@
 		transition: border-color 0.3s ease;
 	}
 	.career_content-right span {
-		font-size: 0.8vw;
+		font-size: 0.88vw;
 		opacity: 0.72;
 	}
 	.right_group1,
@@ -1072,7 +1072,7 @@
 	.right_group3 p {
 		font-size: 1.2vw;
 		margin-left: 12.4vw;
-		line-height: 24px;
+		line-height: 1.4;
 	}
 
 	.right_group1,
@@ -1162,6 +1162,7 @@
 		font-weight: 800;
 		color: var(--mainColor);
 		line-height: 36px;
+		margin-bottom: 16px;
 	}
 
 	.file_download a {
