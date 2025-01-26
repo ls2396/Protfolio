@@ -773,7 +773,7 @@
 
 	.tabbed ul li {
 		display: inline-block;
-		font-size: 1.2vw;
+		font-size: 1.6vw;
 		font-family: 'Urbanist';
 		font-weight: 800;
 		margin: 0 24px 8px 0;
@@ -789,7 +789,7 @@
 		font-size: 1vw;
 		font-family: 'Urbanist';
 		font-weight: 800;
-		margin: 0 24px 12px 0;
+		margin: 0 12px 12px 0;
 		opacity: 0.64;
 		transition: opacity 0.2s ease-out;
 	}
@@ -1131,7 +1131,6 @@
 
 	.int_content-right h1 {
 		font-size: 4vw;
-		line-height: 72px;
 	}
 
 	/* #download
@@ -1140,7 +1139,7 @@
 		width: calc(100% - 102px);
 		margin: 40px auto;
 		z-index: 80;
-		padding-bottom: 40px;
+		padding-bottom: 24px;
 		display: flex;
 		border-bottom: 1px solid var(--mainColor);
 	}
@@ -1164,7 +1163,6 @@
 		font-family: 'Urbanist';
 		font-weight: 800;
 		color: var(--mainColor);
-		line-height: 36px;
 	}
 
 	.file_download a {
@@ -1173,7 +1171,7 @@
 		color: var(--mainColor);
 		font-size: 1vw;
 		cursor: pointer;
-		line-height: 42px;
+		line-height: 40px;
 	}
 
 	/* .file_download a::after{
@@ -1218,7 +1216,7 @@
 		font-weight: 800;
 		color: var(--mainColor);
 		font-size: 1.2vw;
-		margin: 40px 0 6vw;
+		margin: 24px 0 6vw;
 	}
 
 	/* Page_Z-Brain */
