@@ -84,7 +84,6 @@ $(function () {
 });
 
 
-
 document.addEventListener("DOMContentLoaded", function () {
     const careerSection = document.querySelector('.career');
     const careerText = document.querySelectorAll('.career *');
@@ -99,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const screenWidth = window.innerWidth;
 
-        let minScroll = 260;
+        let minScroll = 240;
         let maxScroll;
 
         // 根据屏幕宽度设置滚动范围
@@ -138,4 +137,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener('scroll', handleScroll);
 });
-

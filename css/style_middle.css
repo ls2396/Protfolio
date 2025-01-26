@@ -630,8 +630,8 @@
 		margin-right: 40px;
 	}
 
-	.impact_left-box:nth-child(4) {
-		margin-bottom: 7vw;
+	.impact_left-box:nth-child(3) {
+		padding-bottom: 4.8vw;
 	}
 
 	.impact_left-img {
@@ -772,7 +772,7 @@
 
 	.tabbed ul li {
 		display: inline-block;
-		font-size: 1.2vw;
+		font-size: 1vw;
 		font-family: 'Urbanist';
 		font-weight: 800;
 		margin: 0 24px 12px 0;
@@ -785,7 +785,6 @@
 
 	.tabbed ul li a {
 		display: inline-block;
-		font-size: 1vw;
 		font-family: 'Urbanist';
 		font-weight: 800;
 		margin: 0 24px 12px 0;

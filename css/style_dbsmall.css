@@ -13,7 +13,7 @@
 	}
 
 	.header-wrapper {
-		width: calc(100% - 68px);
+		width: calc(100% - 32px);
 		margin: 18px auto;
 		flex: 1;
 		display: flex;
@@ -43,7 +43,7 @@
 
 	.nav-but-wrap {
 		transition: all 0.3s ease-out;
-		padding: 6px 8px 0 40px;
+		padding: 6px 12px 0 32px;
 		border-left: 1px solid var(--mainColor);
 	}
 
@@ -124,8 +124,8 @@
 	.nav_content {
 		position: fixed;
 		visibility: hidden;
-		top: 56%;
-		left: 56px;
+		top: 50%;
+		left: 32px;
 		-webkit-transform: translate(0%, -50%);
 		transform: translate(0%, -50%);
 		width: 88%;
@@ -305,7 +305,7 @@
 	/* #title
 ================================================== */
 	.tit {
-		width: calc(100% - 102px);
+		width: calc(100% - 32px);
 		display: flex;
 		flex-wrap: wrap;
 		margin-bottom: 5.12vw;
@@ -320,7 +320,7 @@
 	}
 
 	.tit_img img {
-		width: 22.4vw;
+		width: 25.6vw;
 		height: auto;
 		max-width: 424px;
 		max-height: 698px;
@@ -332,7 +332,7 @@
 		display: flex;
 		justify-content: space-between;
 		position: relative;
-		bottom: 8vh;
+		bottom: 7.2vh;
 	}
 
 	.tit_text-conversion,
@@ -343,7 +343,7 @@
 	}
 
 	.tit_text-design {
-		font-size: 6.5vw;
+		font-size: 7.2vw;
 		font-family: 'Gabriella';
 		font-weight: 600;
 		position: relative;
@@ -372,7 +372,7 @@
 	}
 
 	.work {
-		width: calc(100% - 102px);
+		width: calc(100% - 32px);
 		position: relative;
 		z-index: 80;
 	}
@@ -386,7 +386,7 @@
 		font-size: 1.2vw;
 		font-family: 'Urbanist';
 		font-weight: 600;
-		margin-bottom: 16px;
+		margin-bottom: 8px;
 	}
 
 	.work_text-content {
@@ -414,6 +414,7 @@
 		font-size: 4.2vw;
 		font-family: 'Gabriella';
 		font-weight: 600;
+		width: 100%;
 	}
 
 	.work_wrapper-text-submit {
@@ -422,8 +423,8 @@
 		font-weight: 600;
 		color: var(--subColor);
 		background-color: var(--mainColor);
-		padding: 12px 24px;
-		margin: 16px 0 1.8vh;
+		padding: 10px 16px;
+		margin: 12px 0 1.8vh;
 		border-radius: 40px;
 		cursor: pointer;
 	}
@@ -526,7 +527,7 @@
 		font-size: 1.2vw;
 		font-family: 'Urbanist';
 		font-weight: 600;
-		margin-left: 24px;
+		margin-left: 12px;
 	}
 
 	.prev,
@@ -558,7 +559,7 @@
 	/* #review
 ================================================== */
 	.review {
-		width: calc(100% - 102px);
+		width: calc(100% - 32px);
 		z-index: 80;
 		border-bottom: 1px solid var(--mainColor);
 		margin-bottom: 24px;
@@ -580,7 +581,7 @@
 	}
 
 	.review_right {
-		margin: 4vh 0 40px;
+		margin: 4.8vw 0;
 	}
 
 	.review_right img {
@@ -591,7 +592,7 @@
 	/* #impact
 ================================================== */
 	.impact {
-		width: calc(100% - 102px);
+		width: calc(100% - 32px);
 		z-index: 80;
 		display: flex;
 		justify-content: space-between;
@@ -605,19 +606,18 @@
 	}
 
 	.impact_left-box {
-		width: 44vw;
-		height: 26.4vw;
-		margin-right: 16px;
+		width: 56vw;
+		height: 27.4vw;
 	}
 
-	.impact_left-box:nth-child(4) {
-		margin-bottom: 7vw;
+	.impact_left-box:nth-child(3){
+		padding-bottom: 6.4vw;
 	}
 
 	.impact_left-img {
-		width: 44vw;
+		width: 48vw;
 		height: 20vw;
-		max-width: 44vw;
+		max-width: 48vw;
 		overflow: hidden;
 		margin-bottom: 1.2vw;
 		position: relative;
@@ -639,10 +639,10 @@
 		font-family: 'Urbanist';
 		font-weight: 600;
 		display: flex;
+		width: 48vw;
 	}
 
 	.impact_right {
-		width: 40%;
 		display: flex;
 		flex-direction: column;
 		margin-left: 4vw;
@@ -674,7 +674,7 @@
 	}
 
 	.footer_front {
-		width: calc(100% - 102px);
+		width: calc(100% - 32px);
 		font-family: 'Urbanist';
 		font-weight: 600;
 		color: var(--hintTextColor);
@@ -698,7 +698,7 @@
 	}
 
 	.footer_back {
-		width: calc(100% - 102px);
+		width: calc(100% - 32px);
 		font-family: 'Gabriella';
 		font-weight: 600;
 		color: var(--hintTextColor);
@@ -710,7 +710,7 @@
 	/* #title
 ================================================== */
 	.pro_tit_projects {
-		width: calc(100% - 102px);
+		width: calc(100% - 32px);
 		position: relative;
 		z-index: 80;
 	}
@@ -745,14 +745,14 @@
 	/* #tabbed
 ================================================== */
 	.tabbed {
-		width: calc(100% - 102px);
+		width: calc(100% - 32px);
 		margin: 0 auto;
 		z-index: 80;
 	}
 
 	.tabbed ul li {
 		display: inline-block;
-		font-size: 4vw;
+		font-size: 1.4vw;
 		font-family: 'Urbanist';
 		font-weight: 800;
 	}
@@ -764,10 +764,9 @@
 
 	.tabbed ul li a {
 		display: inline-block;
-		font-size: 1vw;
 		font-family: 'Urbanist';
 		font-weight: 800;
-		margin: 0 12px 12px 0;
+		margin: 12px 12px 12px 0;
 		opacity: 0.64;
 		transition: opacity 0.2s ease-out;
 	}
@@ -788,11 +787,11 @@
 	}
 
 	.tabbed_content section {
-		width: 47.4%;
+		width: 46%;
 		display: flex;
 		flex-direction: column;
 		text-align: center;
-		padding: 0 0.8vw;
+		padding: 0 1.6vw;
 		border-right: 1px solid var(--mainColor);
 	}
 
@@ -892,7 +891,7 @@
 	}
 
 	.pro_tit_aboutme {
-		width: calc(100% - 102px);
+		width: calc(100% - 32px);
 		text-align: center;
 	}
 
@@ -909,7 +908,7 @@
 	/* #profile
 ================================================== */
 	.profile {
-		width: calc(100% - 102px);
+		width: calc(100% - 32px);
 		margin: 0 auto;
 		z-index: 80;
 		text-align: center;
@@ -939,7 +938,7 @@
 	/* #element
 ================================================== */
 	.element {
-		width: calc(100% - 102px);
+		width: calc(100% - 32px);
 		margin: 0 auto 40px;
 		z-index: 80;
 		display: flex;
@@ -998,7 +997,7 @@
 	}
 
 	.career_content {
-		width: calc(100% - 102px);
+		width: calc(100% - 32px);
 		margin: 8vw auto 0;
 	}
 
@@ -1040,16 +1039,16 @@
 	.right_group1 h3,
 	.right_group2 h3,
 	.right_group3 h3 {
-		font-size: 1.6vw;
+		font-size: 2.8vw;
 		margin: 1.2vw 0 3vw;
 	}
 
 	.right_group1 p,
 	.right_group2 p,
 	.right_group3 p {
-		font-size: 1.6vw;
+		font-size: 1.4vw;
 		margin-left: 12.4vw;
-		line-height: 16px;
+		line-height: 12px;
 	}
 
 	.right_group1,
@@ -1070,7 +1069,7 @@
 	/* #internship
 ================================================== */
 	.int {
-		width: calc(100% - 102px);
+		width: calc(100% - 32px);
 		margin: 0 auto;
 		padding-bottom: 40px;
 		z-index: 80;
@@ -1115,7 +1114,7 @@
 	/* #download
 ================================================== */
 	.file_download {
-		width: calc(100% - 102px);
+		width: calc(100% - 32px);
 		margin: 16px auto 0;
 		z-index: 80;
 		padding-bottom: 16px;
@@ -1162,7 +1161,7 @@
 	/* #technic
 ================================================== */
 	.technic {
-		width: calc(100% - 102px);
+		width: calc(100% - 32px);
 		margin: 0 auto;
 		z-index: 80;
 	}
@@ -1247,7 +1246,7 @@
 	}
 
 	.page {
-		width: calc(100% - 102px);
+		width: calc(100% - 32px);
 		margin: 0 auto;
 		z-index: 80;
 		display: flex;
@@ -1281,7 +1280,7 @@
 	/* #nextproject
 ================================================== */
 	.nextproject {
-		width: calc(100% - 102px);
+		width: calc(100% - 32px);
 		margin: 0 auto;
 		z-index: 80;
 	}
