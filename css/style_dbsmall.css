@@ -124,17 +124,17 @@
 	.nav_content {
 		position: fixed;
 		visibility: hidden;
-		top: 50%;
+		top: 56%;
 		left: 56px;
 		-webkit-transform: translate(0%, -50%);
 		transform: translate(0%, -50%);
-		width: 100%;
+		width: 88%;
 		z-index: 98;
 	}
 
 	.nav_list-item {
 		position: relative;
-		display: block;
+		/* display: block; */
 		-webkit-transition-delay: 0.8s;
 		transition-delay: 0.8s;
 		opacity: 0;
@@ -142,7 +142,7 @@
 		color: var(--mainColor);
 		overflow: hidden;
 		font-family: 'Gabriella';
-		font-size: 48px;
+		font-size: 32px;
 		line-height: 1.6;
 		-webkit-transform: translate(100px, 0%);
 		transform: translate(100px, 0%);
@@ -417,7 +417,7 @@
 	}
 
 	.work_wrapper-text-submit {
-		font-size: 1vw;
+		font-size: 1.2vw;
 		font-family: 'Urbanist';
 		font-weight: 600;
 		color: var(--subColor);
@@ -434,7 +434,7 @@
 	}
 
 	.work_wrapper-img {
-		height: 42vw;
+		height: 48vw;
 		position: relative;
 		overflow: hidden;
 		display: block;
@@ -502,7 +502,7 @@
 	.content_work3_text-caption,
 	.content_work4_text-caption,
 	.content_work5_text-caption {
-		font-size: 1vw;
+		font-size: 1.4vw;
 		font-family: 'Urbanist';
 		font-weight: 600;
 		margin-bottom: 16px;
@@ -538,7 +538,7 @@
 	}
 
 	.prev {
-		right: 6%;
+		right: 8%;
 	}
 
 	.next {
@@ -570,7 +570,7 @@
 	}
 
 	.review_left-text>div {
-		font-size: 1.8vw;
+		font-size: 2.4vw;
 		font-family: 'Gabriella';
 		font-weight: 600;
 	}
@@ -635,7 +635,7 @@
 	}
 
 	.impact_left-caption {
-		font-size: 1.2vw;
+		font-size: 1.4vw;
 		font-family: 'Urbanist';
 		font-weight: 600;
 		display: flex;
@@ -657,7 +657,7 @@
 	}
 
 	.impact_right-caption {
-		font-size: 1.2vw;
+		font-size: 1.6vw;
 		font-family: 'Urbanist';
 		font-weight: 600;
 		color: var(--mainColor);
@@ -752,7 +752,7 @@
 
 	.tabbed ul li {
 		display: inline-block;
-		font-size: 1.4vw;
+		font-size: 4vw;
 		font-family: 'Urbanist';
 		font-weight: 800;
 	}
@@ -838,7 +838,7 @@
 	}
 
 	.tabbed_content p {
-		font-size: 1vw;
+		font-size: 1.2vw;
 		font-family: 'Urbanist';
 		font-weight: 800;
 		color: var(--mainColor);
@@ -919,7 +919,7 @@
 
 	.profile_title {
 		width: 80%;
-		font-size: 1vw;
+		font-size: 1.2vw;
 		font-family: 'Urbanist';
 		color: var(--subColor);
 		margin: 24px auto 2vw;
@@ -1119,7 +1119,7 @@
 		width: calc(100% - 102px);
 		margin: 16px auto 0;
 		z-index: 80;
-		padding-bottom: 32px;
+		padding-bottom: 16px;
 		display: flex;
 		border-bottom: 1px solid var(--mainColor);
 	}
@@ -1139,7 +1139,7 @@
 	}
 
 	.file_download h1 {
-		font-size: 1.6vw;
+		font-size: 2vw;
 		font-family: 'Urbanist';
 		font-weight: 800;
 		color: var(--mainColor);
@@ -1150,7 +1150,7 @@
 		font-family: 'Urbanist';
 		font-weight: 800;
 		color: var(--mainColor);
-		font-size: 1vw;
+		font-size: 1.4vw;
 		cursor: pointer;
 		line-height: 16px;
 	}

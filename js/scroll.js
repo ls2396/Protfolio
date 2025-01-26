@@ -97,7 +97,23 @@ document.addEventListener("DOMContentLoaded", function () {
         const careerTop = careerSection.offsetTop;
         const careerBottom = careerTop + careerSection.offsetHeight;
 
-        if (currentScroll > 420 && currentScroll < 1240) {
+        const screenWidth = window.innerWidth;
+
+        let minScroll = 260;
+        let maxScroll;
+
+        // 根据屏幕宽度设置滚动范围
+        if (screenWidth >= 1548) {
+            maxScroll = 1080;
+        } else if (screenWidth < 1548 && screenWidth >= 1188) {
+            maxScroll = 1080;
+        } else if (screenWidth < 1188 && screenWidth >= 744) {
+            maxScroll = 1080;
+        } else if (screenWidth < 744) {
+            maxScroll = 560; // 在小屏幕下改变滚动范围
+        }
+
+        if (currentScroll > minScroll && currentScroll < maxScroll) {
             applyActiveStyles();
         } else {
             resetStyles();
@@ -107,18 +123,19 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     const applyActiveStyles = () => {
-        careerSection.style.backgroundColor = 'var(--bgColor)'; 
-        careerRightBorder.style.borderColor = 'var(--transTextColor)'; 
+        careerSection.style.backgroundColor = 'var(--bgColor)';
+        careerRightBorder.style.borderColor = 'var(--transTextColor)';
         careerBottomBorders.forEach(el => el.style.borderColor = 'var(--transTextColor)');
         careerText.forEach(el => el.style.color = 'var(--transTextColor)');
     };
 
     const resetStyles = () => {
-        careerSection.style.backgroundColor = 'var(--subColor)'; 
-        careerRightBorder.style.borderColor = 'var(--mainColor)'; 
+        careerSection.style.backgroundColor = 'var(--subColor)';
+        careerRightBorder.style.borderColor = 'var(--mainColor)';
         careerBottomBorders.forEach(el => el.style.borderColor = 'var(--mainColor)');
         careerText.forEach(el => el.style.color = 'var(--mainColor)');
     };
 
     window.addEventListener('scroll', handleScroll);
 });
+
