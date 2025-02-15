@@ -1058,7 +1058,8 @@
 	.right_group3 h1,
 	.left_group1 h1,
 	.left_group2 h1,
-	.left_group3 h1 {
+	.left_group3 h1,
+	.left_group4 h1 {
 		font-size: 2vw;
 	}
 
@@ -1110,7 +1111,8 @@
 
 	.left_group1,
 	.left_group2,
-	.left_group3 {
+	.left_group3,
+	.left_group4 {
 		margin-left: 4vw;
 		font-family: 'Urbanist';
 		font-weight: 800;
@@ -1119,7 +1121,8 @@
 
 	.left_group1 p,
 	.left_group2 p,
-	.left_group3 p {
+	.left_group3 p,
+	.left_group4 p {
 		margin: 1vw 0 3vw;
 		font-size: 1.4vw;
 	}

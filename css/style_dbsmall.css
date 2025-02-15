@@ -1032,7 +1032,8 @@
 	.right_group3 h1,
 	.left_group1 h1,
 	.left_group2 h1,
-	.left_group3 h1 {
+	.left_group3 h1,
+	.left_group4 h1 {
 		font-size: 2.4vw;
 	}
 
@@ -1071,7 +1072,7 @@
 	.int {
 		width: calc(100% - 32px);
 		margin: 0 auto;
-		padding-bottom: 40px;
+		padding-bottom: 24px;
 		z-index: 80;
 		border-bottom: 1px solid var(--mainColor);
 		border-top: 1px solid var(--mainColor);
@@ -1089,7 +1090,8 @@
 
 	.left_group1,
 	.left_group2,
-	.left_group3 {
+	.left_group3,
+	.left_group4 {
 		margin-left: 4vw;
 		font-family: 'Urbanist';
 		font-weight: 800;
@@ -1098,7 +1100,8 @@
 
 	.left_group1 p,
 	.left_group2 p,
-	.left_group3 p {
+	.left_group3 p,
+	.left_group4 p {
 		margin: 1vw 0 3vw;
 		font-size: 1.4vw;
 	}
