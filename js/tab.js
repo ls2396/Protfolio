@@ -72,3 +72,47 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+
+
+function updateTopBorders() {
+    // 获取所有可见的section
+    const allSections = document.querySelectorAll('.tabbed_content section');
+    const visibleSections = Array.from(allSections).filter(section => {
+        return section.style.display !== 'none' && 
+               window.getComputedStyle(section).display !== 'none';
+    });
+    
+    // 先移除所有section的top-border类
+    allSections.forEach(section => {
+        const h2 = section.querySelector('h2');
+        if (h2) {
+            h2.style.paddingTop = '';
+            h2.style.borderTop = '';
+        }
+    });
+    
+    // 为第4个及之后的可见元素添加top border
+    visibleSections.forEach((section, index) => {
+        const h2 = section.querySelector('h2');
+        if (h2 && index >= 3) {
+            h2.style.paddingTop = '40px';
+            h2.style.borderTop = '1px solid var(--mainColor)';
+        }
+    });
+}
+
+// 在你的标签点击事件中调用
+document.querySelectorAll('.tabbed ul li a').forEach(tab => {
+    tab.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // 你原有的标签切换逻辑...
+        
+        // 切换完成后,更新边框
+        setTimeout(updateTopBorders, 10);
+    });
+});
+
+// 页面加载时也调用一次
+document.addEventListener('DOMContentLoaded', updateTopBorders);

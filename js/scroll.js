@@ -103,13 +103,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // 根据屏幕宽度设置滚动范围
         if (screenWidth >= 1548) {
-            maxScroll = 1080;
+            maxScroll = 1920;
         } else if (screenWidth < 1548 && screenWidth >= 1188) {
-            maxScroll = 1080;
+            maxScroll = 1920;
         } else if (screenWidth < 1188 && screenWidth >= 744) {
-            maxScroll = 1080;
+            maxScroll = 1440;
         } else if (screenWidth < 744) {
-            maxScroll = 560; // 在小屏幕下改变滚动范围
+            maxScroll = 920; // 在小屏幕下改变滚动范围
         }
 
         if (currentScroll > minScroll && currentScroll < maxScroll) {

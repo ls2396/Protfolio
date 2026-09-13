@@ -345,7 +345,7 @@
 	}
 
 	.tit_text-design {
-		font-size: 7.36vw;
+		font-size: 6.62vw;
 		font-family: 'Gabriella';
 		font-weight: 600;
 		position: relative;
@@ -833,9 +833,21 @@
 		position: relative;
 	}
 
-	.tabbed_content section:not(:nth-child(-n+3)) h2 {
+	/* .tabbed_content section:not(:nth-child(-n+3)) h2 {
 		padding-top: 40px;
 		border-top: 1px solid var(--mainColor);
+	} */
+
+	/* tabbed_content section h2 {
+		padding-top: 40px;
+		border-top: 1px solid var(--mainColor);
+	} */
+	
+	.tabbed_content section:nth-child(1) h2,
+	.tabbed_content section:nth-child(2) h2,
+	.tabbed_content section:nth-child(3) h2 {
+		padding-top: 0;
+		border-top: none;
 	}
 
 	.tabbed_content-img {
@@ -872,7 +884,8 @@
 	.tabbed_content-item6,
 	.tabbed_content-item7,
 	.tabbed_content-item8,
-	.tabbed_content-item9 {
+	.tabbed_content-item9,
+	.tabbed_content-item10 {
 		padding-right: 12px;
 		border-right: 1px solid var(--mainColor);
 	}
@@ -1043,7 +1056,9 @@
 	}
 	.right_group1,
 	.right_group2,
-	.right_group3 {
+	.right_group3,
+	.right_group4,
+	.right_group5 {
 		margin-left: 4vw;
 		font-family: 'Urbanist';
 		font-weight: 800;
@@ -1054,35 +1069,44 @@
 	.right_group1 h1,
 	.right_group2 h1,
 	.right_group3 h1,
+	.right_group4 h1,
+	.right_group5 h1,
 	.left_group1 h1,
 	.left_group2 h1,
-	.left_group3 h1,
-	.left_group4 h1 {
+	.left_group3 h1 {
 		font-size: 2vw;
 	}
 
 	.right_group1 h3,
 	.right_group2 h3,
-	.right_group3 h3 {
+	.right_group3 h3, 
+	.right_group4 h3,
+	.right_group5 h3 {
 		font-size: 1.6vw;
 		margin: 1.2vw 0 3vw;
 	}
 
 	.right_group1 p,
 	.right_group2 p,
-	.right_group3 p {
+	.right_group3 p, 
+	.right_group4 p,
+	.right_group5 p {
 		font-size: 1.2vw;
 		margin-left: 12.4vw;
 		line-height: 1.4;
 	}
 
 	.right_group1,
-	.right_group2 {
+	.right_group2,
+	.right_group3, 
+	.right_group4 {
 		border-bottom: 1px solid var(--mainColor);
 	}
 
 	.right_group2,
-	.right_group3 {
+	.right_group3, 
+	.right_group4, 
+	.right_group5 {
 		margin-top: 4.8vw;
 	}
 
@@ -1110,7 +1134,8 @@
 	.left_group1,
 	.left_group2,
 	.left_group3,
-	.left_group4 {
+	.left_group4,
+	.left_group5 {
 		margin-left: 4vw;
 		font-family: 'Urbanist';
 		font-weight: 800;
@@ -1120,7 +1145,8 @@
 	.left_group1 p,
 	.left_group2 p,
 	.left_group3 p,
-	.left_group4 p{
+	.left_group4 p,
+	.left_group5 p{
 		margin: 1vw 0 3vw;
 		font-size: 1.4vw;
 	}
